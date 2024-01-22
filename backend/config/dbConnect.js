@@ -3,7 +3,7 @@ const { default: mongoose } = require("mongoose")
 const dbConnect = () => {
     try{
         const conn = mongoose.connect(process.env.MONGODB_URL, {
-            dbName: 'ecommerce'});
+            dbName: 'LuxeCart'});
         console.log("Database Connection Successful");
     }
     catch(error){
