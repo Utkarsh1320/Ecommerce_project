@@ -9,7 +9,7 @@ const createUser = async (req , res) => {
         res.json(newUser);
 
     }else{
-        //USer alredy exisit
+        //User alredy exisit
         res.json({
             msg:"User Already Exists",
             success:"false",
