@@ -24,7 +24,7 @@ const loginUserCtrl = asyncHandler(async (req, res) => {
     const findUser = await User.findOne({ email });
     if (findUser && (await findUser.isPasswordMatched(password))) {
         res.json({
-            _id: findUser?._id,
+            _id: findUser?._id,   
             firstName: findUser?.firstName,
             lastName: findUser?.lastName,
             email: findUser?.email,
